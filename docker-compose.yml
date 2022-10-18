@@ -19,3 +19,10 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
       ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
+  
+  custom:
+    image: miverboven/review-service-ex
+    restart: always
+    environment:
+      MONGODB_PORT: 27017
+      MONGODB_HOST: localhost
